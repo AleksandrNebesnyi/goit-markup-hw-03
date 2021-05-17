@@ -12,6 +12,7 @@
   --accent-color: #2196f3;
   --primery-bg-color: #f5f4fa;
   --card-set-gap: 30px;
+  --wite-color: #ffffff;
 }
 body {
   background-color: var(--primery-bg-color);
@@ -32,8 +33,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
- 
-  
 }
 
 .list {
@@ -51,25 +50,21 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
- 
-
 }
 .nav {
   display: flex;
-}  
+}
 .logo {
   margin: auto;
 
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
-  
 }
 
 .nav-link {
   display: flex;
   margin-left: 93px;
- 
 }
 .nav-link .item:not(:last-child) {
   margin-right: 50px;
@@ -93,10 +88,9 @@ img {
 .nav-information {
   display: flex;
   margin-left: auto;
- 
 }
 
-.nav-information .item +.item {
+.nav-information .item + .item {
   margin-left: 50px;
 }
 .nav-information-list {
@@ -107,16 +101,15 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  
 }
-.nav-link-list:hover,
-.nav-link-list:focus {
+
+.nav-link a:hover,
+.nav-link a:focus,
+.nav-information a:hover,
+.nav-information a:focus {
   color: var(--accent-color);
 }
-.nav-information-list:hover,
-.nav-information-list:focus {
-  color: var(--accent-color);
-}
+
 /* Герой */
 .hero {
   background-color: #2f303a;
@@ -126,7 +119,7 @@ img {
   text-align: center;
 }
 .hero-title {
-  color: #ffffff;
+  color: var(---wite-color);
   margin-top: 0px;
   margin-bottom: 30px;
 
@@ -162,12 +155,10 @@ img {
 }
 
 .advantages-list .item {
- 
   background-color: springgreen;
 }
 .advantages-list .item:not(:last-child) {
   margin-right: 30px;
-  
 }
 
 .advantages-title {
@@ -206,7 +197,6 @@ img {
 }
 .example-list .item:not(:last-child) {
   margin-right: 30px;
-  
 }
 
 /* Наша команда */
@@ -215,7 +205,6 @@ img {
   margin-top: 0px;
   margin-bottom: 30px;
   padding: 0px;
-
 }
 
 .team-title {
@@ -229,7 +218,6 @@ img {
   text-align: center;
 }
 .team-images {
-  
   margin-bottom: 30px;
 }
 
@@ -264,25 +252,32 @@ img {
   margin-bottom: 20px;
 }
 .footer-list li {
-  color: #ffffff;
+  color: var(--wite-color);
   line-height: 1.7;
   margin-bottom: 9px;
 }
-.footer-email {
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+
+.footer-list a:hover,
+.footer-list a:focus {
+  color: var(--accent-color);
 }
 
+.footer-email,
 .footer-tel {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* .footer-tel {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+} */
 /* Портфолио */
 
 /* Кнопки портфолио */
 .button-list {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .button {
@@ -306,15 +301,14 @@ img {
 
 /* Проекты */
 .project {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-left:calc (-1*var(--card-set-gap));
-  margin-top: calc (-1*var(--card-set-gap));
-  
+  margin-left: calc (-1 * var(--card-set-gap));
+  margin-top: calc (-1 * var(--card-set-gap));
 }
 
 /* .project-images {
@@ -326,11 +320,11 @@ img {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   /* border: 2px solid green; */
-  }
+}
 
 .card-image {
   margin-bottom: 20px;
-} 
+}
 
 .project-title {
   color: var(--secondary-text-color);
@@ -339,7 +333,6 @@ img {
   margin: 0;
   margin-bottom: 4px;
 
- 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
