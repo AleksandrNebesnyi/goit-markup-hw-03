@@ -29,9 +29,10 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+ 
   
 }
 
@@ -47,19 +48,56 @@ img {
 
 /* Навигация */
 
+.main-nav {
+  display: flex;
+  align-items: center;
+ 
+
+}
+.nav {
+  display: flex;
+}  
 .logo {
+  margin: auto;
+
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+  
 }
+
+.nav-link {
+  display: flex;
+  margin-left: 93px;
+ 
+}
+.nav-link .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link-list {
   color: var(--secondary-text-color);
+
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  background-color: wheat;
+}
+
+.nav-information {
+  display: flex;
+  margin-left: auto;
+ 
+}
+
+.nav-information .item +.item {
+  margin-left: 50px;
 }
 .nav-information-list {
   color: var(--primery-text-color);
@@ -69,6 +107,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  
 }
 .nav-link-list:hover,
 .nav-link-list:focus {
@@ -94,7 +133,6 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  /* text-align: center; */
   letter-spacing: 0.06em;
 }
 .button-hero {
@@ -105,7 +143,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  /* vertical-align:centr;   */
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
@@ -119,6 +156,19 @@ img {
 .advantages {
   margin-bottom: 94px;
 }
+.advantages-list {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.advantages-list .item {
+ 
+  background-color: springgreen;
+}
+.advantages-list .item:not(:last-child) {
+  margin-right: 30px;
+  
+}
 
 .advantages-title {
   color: var(--secondary-text-color);
@@ -129,14 +179,14 @@ img {
 }
 
 .advanteges-description {
-  margin: 0px;
+  display: block;
 
   line-height: 1.7;
 }
 
 /* Примеры работ */
 .example {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .example-title {
@@ -148,6 +198,15 @@ img {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+.example-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+.example-list .item:not(:last-child) {
+  margin-right: 30px;
+  
 }
 
 /* Наша команда */
@@ -223,6 +282,7 @@ img {
 /* Кнопки портфолио */
 .button-list {
   display: flex;
+  justify-content:center;
 }
 
 .button {
