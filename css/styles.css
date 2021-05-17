@@ -11,6 +11,7 @@
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --primery-bg-color: #f5f4fa;
+  --card-set-gap: 30px;
 }
 body {
   background-color: var(--primery-bg-color);
@@ -20,13 +21,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color: gray; */
+  
 }
 
 .list {
@@ -150,7 +156,7 @@ body {
   margin-top: 0px;
   margin-bottom: 30px;
   padding: 0px;
-  /* background-color: hotpink; */
+
 }
 
 .team-title {
@@ -164,7 +170,7 @@ body {
   text-align: center;
 }
 .team-images {
-  display: block;
+  
   margin-bottom: 30px;
 }
 
@@ -213,7 +219,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 /* Портфолио */
+
 /* Кнопки портфолио */
+.button-list {
+  display: flex;
+}
+
 .button {
   color: var(--secondary-text-color);
   background-color: var(--primery-bg-color);
@@ -235,35 +246,62 @@ body {
 
 /* Проекты */
 .project {
-  background-color: tomato;
+  display:flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left:calc (-1*var(--card-set-gap));
+  margin-top: calc (-1*var(--card-set-gap));
+  
 }
 
-.project-images {
-  display: block;
+/* .project-images {
+ 
   margin-bottom: 20px;
-}
+} */
+.project > .card {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  /* border: 2px solid green; */
+  }
+
+.card-image {
+  margin-bottom: 20px;
+} 
 
 .project-title {
   color: var(--secondary-text-color);
 
-  margin-top: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 4px;
 
+ 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
+  /* border: 2px solid red; */
 }
 
 .project-description {
   color: var(--primery-text-color);
 
-  margin-top: 0px;
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
 
   font-size: 16px;
   line-height: 1.9;
+  /* border: 2px solid teal; */
 }
-.project-description:last-child {
+
+.card-content {
+  padding: 20px 24px;
+  /* border: 2px solid tomato; */
+}
+/* .project-description:last-child {
   margin-bottom: 0px;
-}
+} */
