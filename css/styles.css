@@ -33,6 +33,8 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -47,6 +49,14 @@ img {
 
 /* Навигация */
 
+.page-header{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #ECECEC;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -114,7 +124,7 @@ img {
 .hero {
   background-color: #2f303a;
 
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 
   text-align: center;
 }
@@ -147,7 +157,7 @@ img {
 /* Преимущества */
 
 .advantages {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .advantages-list {
   display: flex;
@@ -156,7 +166,7 @@ img {
 
 .advantages-list .item {
   width: 270px;
-  background-color: springgreen;
+  /* background-color: springgreen; */
 }
 .advantages-list .item:not(:last-child) {
   margin-right: 30px;
@@ -184,7 +194,7 @@ img {
   color: var(--secondary-text-color);
 
   margin-top: 0px;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.2;
@@ -287,6 +297,7 @@ img {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -320,10 +331,10 @@ img {
   margin-top: calc (-1 * var(--card-set-gap));
 }
 
-/* .project-images {
- 
-  margin-bottom: 20px;
-} */
+.project .card {
+  border-bottom: 1px solid #EEEEEE;
+}
+
 .project > .card {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
