@@ -82,7 +82,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  background-color: wheat;
+
 }
 
 .nav-information {
@@ -151,10 +151,11 @@ img {
 }
 .advantages-list {
   display: flex;
-  /* justify-content: space-between; */
+
 }
 
 .advantages-list .item {
+  width: 270px;
   background-color: springgreen;
 }
 .advantages-list .item:not(:last-child) {
@@ -171,7 +172,6 @@ img {
 
 .advanteges-description {
   display: block;
-
   line-height: 1.7;
 }
 
@@ -200,12 +200,6 @@ img {
 }
 
 /* Наша команда */
-.team-list li {
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  padding: 0px;
-}
 
 .team-title {
   color: var(--secondary-text-color);
@@ -217,6 +211,24 @@ img {
   line-height: 1.2;
   text-align: center;
 }
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list item {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 270px;
+  background-color: cadetblue;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-images {
   margin-bottom: 30px;
 }
@@ -268,10 +280,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* .footer-tel {
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-} */
+
 /* Портфолио */
 
 /* Кнопки портфолио */
@@ -319,8 +328,7 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  /* border: 2px solid green; */
-}
+ }
 
 .card-image {
   margin-bottom: 20px;
@@ -335,10 +343,9 @@ img {
 
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-decoration: none;
-  /* border: 2px solid red; */
-}
+  }
 
 .project-description {
   color: var(--primery-text-color);
@@ -348,13 +355,8 @@ img {
 
   font-size: 16px;
   line-height: 1.9;
-  /* border: 2px solid teal; */
-}
+ }
 
 .card-content {
   padding: 20px 24px;
-  /* border: 2px solid tomato; */
-}
-/* .project-description:last-child {
-  margin-bottom: 0px;
-} */
+ }
