@@ -128,9 +128,16 @@ img {
 }
 .hero-title {
   color: var(--wite-color);
-  margin-top: 0px;
+
+  display: block;
+
+  width: 696px;
+  margin: 0 auto;
+
+  padding-top: 200px;
   margin-bottom: 30px;
 
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -139,6 +146,9 @@ img {
 .button-hero {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
+
+  display: block;
+  margin: 0 auto;
 
   font-family: inherit;
   font-weight: 700;
@@ -266,7 +276,7 @@ img {
 
 .footer {
   background-color: #2f303a;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .container.item {
   margin: 0px;
@@ -274,7 +284,7 @@ img {
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 60px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .footer-logo {
