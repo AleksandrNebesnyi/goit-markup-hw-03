@@ -33,6 +33,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 .section {
   padding-top: 94px;
@@ -48,20 +49,36 @@ img {
   text-decoration: none;
 }
 
+
 /* Навигация */
 
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
 .logo {
-  /* display: inline-block; */
-  margin-left: 215px;
+  color:var( --secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
+}
+ 
+  
+.nav-link  {
+  /* display: inline-block; */
+  border: 1px solid red;
+}
+.nav-information {
+    /* display:inline-block; */
+    border: 1px solid red;
 }
 
+.nav-box  {
+   
+  display: flex;
+ 
+}
 /* .main-nav {
   display: flex;
   align-items: center;
@@ -81,10 +98,6 @@ img {
 .nav-link-list {
   color: var(--secondary-text-color);
 
-  /* display: block;
-  padding-top: 20px;
-  padding-bottom: 20px; */
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -92,9 +105,7 @@ img {
   text-decoration: none;
 }
 
-.nav-information {
-  display: flex;
-}
+
 
 /* .nav-information .item + .item {
   margin-left: 50px;
