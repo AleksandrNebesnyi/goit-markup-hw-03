@@ -49,7 +49,6 @@ img {
   text-decoration: none;
 }
 
-
 /* Навигация */
 
 .page-header {
@@ -57,45 +56,40 @@ img {
 }
 
 .logo {
+  margin-left: 215px;
+
   color:var( --secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-}
- 
   
-.nav-link  {
-  /* display: inline-block; */
-  border: 1px solid red;
-}
-.nav-information {
-    /* display:inline-block; */
-    border: 1px solid red;
 }
 
-.nav-box  {
-   
-  display: flex;
+ .logo-part-first {
+   color:var(--accent-color);
+ }
  
-}
-/* .main-nav {
+.main-nav, .nav, .nav-link, .nav-information  {
   display: flex;
   align-items: center;
+} 
+.main-nav {
+  align-items: center;
+  
 }
-.nav {
-  display: flex;
-} */
-
-/* .nav-link {
-  display: flex;
+.nav-link  {
   margin-left: 93px;
-} */
-/* .nav-link .item:not(:last-child) {
-  margin-right: 50px;
-} */
+ }
 
-.nav-link-list {
+.nav-link .item:not(:last-child) {
+  margin-right: 50px;
+} 
+
+.nav-link .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -105,12 +99,15 @@ img {
   text-decoration: none;
 }
 
+.nav-link .link.current {
+color: var(--accent-color);
+}
 
+.nav-information .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-/* .nav-information .item + .item {
-  margin-left: 50px;
-} */
-.nav-information-list {
   color: var(--primery-text-color);
 
   font-weight: 500;
@@ -120,6 +117,14 @@ img {
   text-decoration: none;
 }
 
+.nav-information  {
+  margin-left: auto;
+  margin-right: 215px;
+}
+
+.nav-information .item + .item{
+  margin-left: 50px;
+}
 .nav-link a:hover,
 .nav-link a:focus,
 .nav-information a:hover,
@@ -279,13 +284,19 @@ img {
   background-color: #2f303a;
 }
 .footer-conteiner {
+  margin: 0px;
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 60px;
 }
 
 .footer-logo {
-  display: inline-block;
+  display: block;
+  color:var( --secondary-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
   margin-bottom: 20px;
 }
 
@@ -315,8 +326,11 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  align-items: center;
 }
-
+.button-list .item:not(:last-child){
+  margin-left: 8px;
+}
 .button {
   color: var(--secondary-text-color);
   background-color: var(--primery-bg-color);
